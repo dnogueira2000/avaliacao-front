@@ -25,6 +25,18 @@ export class PessoaService {
     return this.http.post<Pessoa>(url, pessoa);
   }
 
+  findById(codigo: String): Observable<Pessoa> {
+    const url = `${this.baseUrl}/pessoa/find/${codigo}`;
+
+    return this.http.get<Pessoa>(url);
+  }
+
+  delete(codigo: String): Observable<void> {
+    const url = `${this.baseUrl}/pessoa/${codigo}`;
+
+    return this.http.delete<void>(url);
+  }
+
   mensagem(str: String): void {
     this._snack.open(`${str}`, 'OK', {
       horizontalPosition: 'end',

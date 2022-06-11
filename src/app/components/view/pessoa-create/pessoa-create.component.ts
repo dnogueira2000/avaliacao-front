@@ -35,4 +35,8 @@ export class PessoaCreateComponent implements OnInit {
     })
   }
 
+  cancelar(): void {
+    this.router.navigate(['pessoas']);
+  }
+
 }
