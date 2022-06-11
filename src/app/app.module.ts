@@ -16,8 +16,12 @@ import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './components/view/home/home.component';
 import { PessoasReadComponent } from './components/view/pessoas-read/pessoas-read.component';
 import {MatTableModule} from '@angular/material/table';
-
-
+import {MatButtonModule} from '@angular/material/button';
+import { PessoaCreateComponent } from './components/view/pessoa-create/pessoa-create.component';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +29,8 @@ import {MatTableModule} from '@angular/material/table';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    PessoasReadComponent
+    PessoasReadComponent,
+    PessoaCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,12 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     MatCardModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

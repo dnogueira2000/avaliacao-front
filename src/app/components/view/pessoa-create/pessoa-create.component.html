@@ -1,0 +1,23 @@
+<form>
+    <h1>Criando nova pessoa</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="pessoa.nome" type="text" name="nome" placeholder="Digite seu nome">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>CPF</mat-label>
+        <input maxlength="11" [(ngModel)]="pessoa.cpf" matInput type="text" name="cpf" placeholder="Digite seu CPF">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Data Nascimento</mat-label>
+        <input matInput type="text" [(ngModel)]="pessoa.dataNascimento" name="dataNascimento" placeholder="Digite a data de nascimento">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary">Criar</button>
+        <button  class="mat-elevation-z8" mat-stroked-button color="warn">Cancelar</button>
+    </div>
+</form>

@@ -13,6 +13,19 @@
     font-weight: 500;
 }
 
+button {
+    margin-bottom: 10px;
+}
+
 table {
     width: 100%;
+}
+
+.edit {
+    color: blue;
+}
+
+.delete {
+    color: red;
+    margin-left: 5px;
 }
