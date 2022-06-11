@@ -1,0 +1,16 @@
+form {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.form {
+    width: 60%;
+}
+
+button {
+    margin-right: 5px;
+}

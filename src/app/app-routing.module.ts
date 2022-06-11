@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/view/home/home.component';
 import { PessoaCreateComponent } from './components/view/pessoa-create/pessoa-create.component';
 import { PessoaDeleteComponent } from './components/view/pessoa-delete/pessoa-delete.component';
+import { PessoaUpdateComponent } from './components/view/pessoa-update/pessoa-update.component';
 import { PessoasReadComponent } from './components/view/pessoas-read/pessoas-read.component';
 
 const routes: Routes = [
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'pessoas/apagar/:codigo',
     component: PessoaDeleteComponent
+  },
+  {
+    path: 'pessoas/update/:codigo',
+    component: PessoaUpdateComponent
   }
 ];
 
