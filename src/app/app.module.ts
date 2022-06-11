@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './components/view/home/home.component';
+import { PessoasReadComponent } from './components/view/pessoas-read/pessoas-read.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -21,7 +24,8 @@ import { HomeComponent } from './components/view/home/home.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    PessoasReadComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,9 @@ import { HomeComponent } from './components/view/home/home.component';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
